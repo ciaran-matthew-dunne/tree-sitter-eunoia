@@ -1,4 +1,12 @@
-// grammar.js
+/**
+ * @file Parser for the Eunoia logical framework
+ * @author
+ * @license MIT
+ */
+
+/// <reference types="tree-sitter-cli/dsl" />
+// @ts-check
+
 module.exports = grammar({
   name: "eunoia",
 
@@ -135,9 +143,9 @@ module.exports = grammar({
           // (echo <string>?)
           seq("echo", optional($.string)),
           // (exit)
-          seq("exit"),
+          "exit",
           // (reset)
-          seq("reset"),
+          "reset",
           // (set-option <attr>)
           seq("set-option", $.attr),
         ),
@@ -152,7 +160,7 @@ module.exports = grammar({
           // (assert <term>)
           seq("assert", $.term),
           // (check-sat)
-          seq("check-sat"),
+          "check-sat",
           // (check-sat-assuming (<term>*))
           seq("check-sat-assuming", "(", repeat($.term), ")"),
           // (declare-fun <symbol> (<type>*) <type> <attr>*)
@@ -198,8 +206,8 @@ module.exports = grammar({
             ")",
           ),
           seq("echo", optional($.string)),
-          seq("exit"),
-          seq("reset"),
+          "exit",
+          "reset",
           seq("set-option", $.attr),
         ),
         ")",

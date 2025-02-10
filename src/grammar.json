@@ -1,5 +1,6 @@
 {
-  "name": "eo",
+  "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/grammar.schema.json",
+  "name": "eunoia",
   "rules": {
     "source_file": {
       "type": "REPEAT",
@@ -743,22 +744,12 @@
               ]
             },
             {
-              "type": "SEQ",
-              "members": [
-                {
-                  "type": "STRING",
-                  "value": "exit"
-                }
-              ]
+              "type": "STRING",
+              "value": "exit"
             },
             {
-              "type": "SEQ",
-              "members": [
-                {
-                  "type": "STRING",
-                  "value": "reset"
-                }
-              ]
+              "type": "STRING",
+              "value": "reset"
             },
             {
               "type": "SEQ",
@@ -805,13 +796,8 @@
               ]
             },
             {
-              "type": "SEQ",
-              "members": [
-                {
-                  "type": "STRING",
-                  "value": "check-sat"
-                }
-              ]
+              "type": "STRING",
+              "value": "check-sat"
             },
             {
               "type": "SEQ",
@@ -1106,22 +1092,12 @@
               ]
             },
             {
-              "type": "SEQ",
-              "members": [
-                {
-                  "type": "STRING",
-                  "value": "exit"
-                }
-              ]
+              "type": "STRING",
+              "value": "exit"
             },
             {
-              "type": "SEQ",
-              "members": [
-                {
-                  "type": "STRING",
-                  "value": "reset"
-                }
-              ]
+              "type": "STRING",
+              "value": "reset"
             },
             {
               "type": "SEQ",
@@ -1654,6 +1630,6 @@
   "precedences": [],
   "externals": [],
   "inline": [],
-  "supertypes": []
+  "supertypes": [],
+  "reserved": {}
 }
-
