@@ -1,4 +1,4 @@
-"""Parser for the Eunoia logical framework"""
+"""Tree-sitter parser for the Eunoia logical framework"""
 
 from importlib.resources import files as _files
 

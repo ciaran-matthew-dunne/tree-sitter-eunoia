@@ -1,25 +1,22 @@
 {
-  "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/config.schema.json",
   "grammars": [
     {
       "name": "eunoia",
       "camelcase": "Eunoia",
-      "title": "Eunoia",
       "scope": "source.eunoia",
       "file-types": [
         "eo"
       ],
-      "injection-regex": "^eunoia$",
-      "class-name": "TreeSitterEunoia"
+      "injection-regex": "^eunoia$"
     }
   ],
   "metadata": {
     "version": "0.1.0",
     "license": "MIT",
-    "description": "Parser for the Eunoia logical framework",
+    "description": "Tree-sitter parser for the Eunoia logical framework",
     "authors": [
       {
-        "name": "Ciarán Dunne",
+        "name": "Ciaran Dunne",
         "email": "ciaran.dunne@inria.fr"
       }
     ],
@@ -33,7 +30,6 @@
     "node": true,
     "python": true,
     "rust": true,
-    "swift": true,
-    "zig": false
+    "swift": true
   }
 }
