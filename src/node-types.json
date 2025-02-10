@@ -1,0 +1,631 @@
+[
+  {
+    "type": "arguments",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "term",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "assumption",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "term",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "attr",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "keyword",
+          "named": true
+        },
+        {
+          "type": "term",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "command",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "common_command",
+          "named": true
+        },
+        {
+          "type": "eo_command",
+          "named": true
+        },
+        {
+          "type": "smtlib2_command",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "common_command",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "attr",
+          "named": true
+        },
+        {
+          "type": "datatype_dec",
+          "named": true
+        },
+        {
+          "type": "sort_dec",
+          "named": true
+        },
+        {
+          "type": "string",
+          "named": true
+        },
+        {
+          "type": "symbol",
+          "named": true
+        },
+        {
+          "type": "type",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "cons_dec",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "sel_dec",
+          "named": true
+        },
+        {
+          "type": "symbol",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "datatype_dec",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "cons_dec",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "eo_command",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "arguments",
+          "named": true
+        },
+        {
+          "type": "assumption",
+          "named": true
+        },
+        {
+          "type": "attr",
+          "named": true
+        },
+        {
+          "type": "keyword",
+          "named": true
+        },
+        {
+          "type": "lit_category",
+          "named": true
+        },
+        {
+          "type": "premises",
+          "named": true
+        },
+        {
+          "type": "reqs",
+          "named": true
+        },
+        {
+          "type": "sexpr",
+          "named": true
+        },
+        {
+          "type": "simple_premises",
+          "named": true
+        },
+        {
+          "type": "string",
+          "named": true
+        },
+        {
+          "type": "symbol",
+          "named": true
+        },
+        {
+          "type": "term",
+          "named": true
+        },
+        {
+          "type": "type",
+          "named": true
+        },
+        {
+          "type": "typed_param",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "premises",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "simple_premises",
+          "named": true
+        },
+        {
+          "type": "term",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "reqs",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "term",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "sel_dec",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "symbol",
+          "named": true
+        },
+        {
+          "type": "type",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "sexpr",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "term",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "simple_premises",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "term",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "smtlib2_command",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "attr",
+          "named": true
+        },
+        {
+          "type": "datatype_dec",
+          "named": true
+        },
+        {
+          "type": "numeral",
+          "named": true
+        },
+        {
+          "type": "sort_dec",
+          "named": true
+        },
+        {
+          "type": "string",
+          "named": true
+        },
+        {
+          "type": "symbol",
+          "named": true
+        },
+        {
+          "type": "term",
+          "named": true
+        },
+        {
+          "type": "type",
+          "named": true
+        },
+        {
+          "type": "typed_param",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "sort_dec",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "numeral",
+          "named": true
+        },
+        {
+          "type": "symbol",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "source_file",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "command",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "term",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "attr",
+          "named": true
+        },
+        {
+          "type": "symbol",
+          "named": true
+        },
+        {
+          "type": "term",
+          "named": true
+        },
+        {
+          "type": "typed_param",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "type",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "term",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "typed_param",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "attr",
+          "named": true
+        },
+        {
+          "type": "symbol",
+          "named": true
+        },
+        {
+          "type": "type",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "!",
+    "named": false
+  },
+  {
+    "type": "(",
+    "named": false
+  },
+  {
+    "type": ")",
+    "named": false
+  },
+  {
+    "type": ":args",
+    "named": false
+  },
+  {
+    "type": ":assumption",
+    "named": false
+  },
+  {
+    "type": ":conclusion",
+    "named": false
+  },
+  {
+    "type": ":premise-list",
+    "named": false
+  },
+  {
+    "type": ":premises",
+    "named": false
+  },
+  {
+    "type": ":requires",
+    "named": false
+  },
+  {
+    "type": ":rule",
+    "named": false
+  },
+  {
+    "type": "assert",
+    "named": false
+  },
+  {
+    "type": "assume",
+    "named": false
+  },
+  {
+    "type": "assume-push",
+    "named": false
+  },
+  {
+    "type": "check-sat",
+    "named": false
+  },
+  {
+    "type": "check-sat-assuming",
+    "named": false
+  },
+  {
+    "type": "comment",
+    "named": true
+  },
+  {
+    "type": "declare-const",
+    "named": false
+  },
+  {
+    "type": "declare-consts",
+    "named": false
+  },
+  {
+    "type": "declare-datatype",
+    "named": false
+  },
+  {
+    "type": "declare-datatypes",
+    "named": false
+  },
+  {
+    "type": "declare-fun",
+    "named": false
+  },
+  {
+    "type": "declare-oracle-fun",
+    "named": false
+  },
+  {
+    "type": "declare-parameterized-const",
+    "named": false
+  },
+  {
+    "type": "declare-rule",
+    "named": false
+  },
+  {
+    "type": "declare-sort",
+    "named": false
+  },
+  {
+    "type": "declare-type",
+    "named": false
+  },
+  {
+    "type": "define",
+    "named": false
+  },
+  {
+    "type": "define-const",
+    "named": false
+  },
+  {
+    "type": "define-fun",
+    "named": false
+  },
+  {
+    "type": "define-sort",
+    "named": false
+  },
+  {
+    "type": "define-type",
+    "named": false
+  },
+  {
+    "type": "echo",
+    "named": false
+  },
+  {
+    "type": "eo::match",
+    "named": false
+  },
+  {
+    "type": "exit",
+    "named": false
+  },
+  {
+    "type": "include",
+    "named": false
+  },
+  {
+    "type": "keyword",
+    "named": true
+  },
+  {
+    "type": "lit_category",
+    "named": true
+  },
+  {
+    "type": "numeral",
+    "named": true
+  },
+  {
+    "type": "program",
+    "named": false
+  },
+  {
+    "type": "reference",
+    "named": false
+  },
+  {
+    "type": "reset",
+    "named": false
+  },
+  {
+    "type": "set-info",
+    "named": false
+  },
+  {
+    "type": "set-logic",
+    "named": false
+  },
+  {
+    "type": "set-option",
+    "named": false
+  },
+  {
+    "type": "step",
+    "named": false
+  },
+  {
+    "type": "step-pop",
+    "named": false
+  },
+  {
+    "type": "string",
+    "named": true
+  },
+  {
+    "type": "symbol",
+    "named": true
+  }
+]
